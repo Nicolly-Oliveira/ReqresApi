@@ -148,3 +148,35 @@ projetar teste     |   30/03/2023   | 30/03/2023
 implementar teste  |   31/03/2023   | 31/03/2023
 executar teste     |   01/04/2023   | 01/04/2023
 avaliar teste      |   02/04/2023   | 02/04/2023
+
+
+## 6 - Reportar Bug
+
+ ### 6.1 - Bug ID-1
+ 
+   #### Realizando login com senha inválida
+  
+   É possivel acessar a aplicação por meio de qualquer senha, apenas é necessário um email válido.
+
+   #### Para Reproduzir
+   
+   Enviar uma requisição do tipo POST e no body colocar um email valido e uma senha invalida e realizar a requisição. 
+
+   #### Comportamento Esperado
+   
+   Era esperado que o sistema não aprovasse o login com senha inválida.
+
+   #### Prioridade
+   
+   <kbd>P0 - Prioridade Máxima</kbd>
+
+   #### Desktop
+    - OS: [e.g. Windows]
+    - Intellij [e.g. chrome]
+    - Junit 4
+
+## 6 - Preocupações
+
+   Nessa API, mesmo existindo token e id, não é necessária a autetivação do usuário para realizar as requisições. Devido a disso, certas funcionalidas podem estar vulneráveis a qualquer tipo de modificação por qualquer usuário. 
+
+
