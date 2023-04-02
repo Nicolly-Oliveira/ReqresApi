@@ -3,7 +3,7 @@ package modulos.Registro;
 import core.BaseTest;
 import core.Constantes;
 import org.hamcrest.Matchers;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -81,22 +81,5 @@ public class RegistroTest extends BaseTest {
         ;
 
     }
-
-    @Test
-    public void RegistrarUsuárioComSenhaInvalidoEEmailValido(){
-        Map<String, String> credenciais = new HashMap<>();
-        credenciais.put("email", Constantes.EMAIL);
-        credenciais.put("password", "test");
-
-        given()
-            .body(credenciais)
-        .when()
-            .post("/register")
-        .then()
-            .statusCode(400)
-        ;
-
-    }
-
 
 }

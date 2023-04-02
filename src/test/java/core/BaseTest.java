@@ -4,12 +4,13 @@ import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
 import org.hamcrest.Matchers;
-import org.junit.jupiter.api.BeforeEach;
+import org.junit.BeforeClass;
+
 
 public class BaseTest implements Constantes{
 
-    @BeforeEach
-    public void setUPp(){
+    @BeforeClass
+    public static void setUPp(){
         RestAssured.baseURI = API_BASE_URL;
         RestAssured.basePath = API_BASE_PATH;
 

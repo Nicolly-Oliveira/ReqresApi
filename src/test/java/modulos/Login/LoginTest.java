@@ -6,7 +6,7 @@ import io.restassured.http.ContentType;
 import org.hamcrest.Matchers;
 import org.junit.Before;
 import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 import java.util.HashMap;
 import java.util.Map;
