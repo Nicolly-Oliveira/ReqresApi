@@ -177,6 +177,6 @@ avaliar teste      |   02/04/2023   | 02/04/2023
 
 ## 6 - Preocupações
 
-   Nessa API, mesmo existindo token e id, não é necessária a autetivação do usuário para realizar as requisições. Devido a disso, certas funcionalidas podem estar vulneráveis a qualquer tipo de modificação por qualquer usuário. 
+   Nessa API, mesmo existindo token e id, não é necessária a autetivação do usuário para realizar as requisições. Devido a disso, certas funcionalidas podem estar vulneráveis a qualquer tipo de modificação por qualquer usuário. Por fim a API se comporta como é descrita na documentação do Swagger, mesmo não sendo as mais adequadas.
 
 
